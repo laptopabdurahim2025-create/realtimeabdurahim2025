@@ -140,16 +140,4 @@ function startTimer() {
   }, 1000);
 }
 
-function pauseTimer() {
-  clearInterval(timerInterval);
-  timerInterval = null;
-}
-
-function resetTimer() {
-  clearInterval(timerInterval);
-  timerInterval = null;
-  totalSeconds = 60;
-  updateTimerDisplay();
-}
-
 updateTimerDisplay();
