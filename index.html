@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,20 +8,28 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <h3 id="full-day">
-        Day Month, Year
-      </h3>
-      <div class="time-container">
-        <span id="hour">Hh</span>
-        :
-        <span id="minute">Mm</span>
-        :
-        <span id="second">Ss</span>
+    <div class="wrapper">
+      <div class="container">
+        <h3 id="full-day">Day Month, Year</h3>
+
+        <div class="time-container">
+          <span id="hour">Hh</span>
+          :
+          <span id="minute">Mm</span>
+          :
+          <span id="second">Ss</span>
+        </div>
+      </div>
+
+      <div id="timer">01:00</div>
+
+      <div class="buttons">
+        <button onclick="startTimer()">Start</button>
+        <button onclick="pauseTimer()">Pause</button>
+        <button onclick="resetTimer()">Reset</button>
       </div>
     </div>
 
-    <!-- js -->
     <script src="app.js"></script>
   </body>
 </html>
